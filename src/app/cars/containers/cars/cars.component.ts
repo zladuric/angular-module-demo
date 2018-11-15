@@ -34,7 +34,7 @@ export class CarsComponent implements OnInit, OnDestroy {
   }
 
   doSearch(val) {
-    this.cars = this.cars.filter(car => car.Name.indexOf(val) > -1);
+    this.cars = this.carsService.getCars().filter(car => car.Name.indexOf(val) > -1);
   }
 
 }
