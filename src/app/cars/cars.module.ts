@@ -9,6 +9,7 @@ import { CarsTableComponent } from './components/cars-table/cars-table.component
 import { CarsListComponent } from './components/cars-list/cars-list.component';
 import { CarsDetailComponent } from './containers/cars-detail/cars-detail.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ConvertFromPoundsPipe } from './pipes/convertFromPoundsPipe';
 
 // app
 
@@ -18,7 +19,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     FormsModule,
     CarsRoutingModule,
   ],
-  declarations: [CarsComponent, CarsTableComponent, CarsListComponent, CarsDetailComponent, FilterPipe],
+  declarations: [CarsComponent, CarsTableComponent, CarsListComponent, CarsDetailComponent, FilterPipe, ConvertFromPoundsPipe],,
+  providers: [CarsService],
 })
 export class CarsModule {
 }

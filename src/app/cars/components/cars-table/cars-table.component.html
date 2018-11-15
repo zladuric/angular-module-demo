@@ -1,3 +1,10 @@
+<ng-container *ngTemplateOutlet="car.inputType">
+  whatever
+</ng-container>
+
+<ng-template #dropdownInput>
+
+</ng-template>
 <table>
   <thead>
   <tr>
@@ -11,7 +18,7 @@
   <tr *ngFor="let car of cars">
     <td><a [routerLink]="['', car.Name]">{{ car.Name }}</a></td>
     <td>{{ car.Year }}</td>
-    <td>{{ car.Weight_in_lbs }}</td>
+    <td>{{ car.Weight_in_lbs | convertFromPounds:'kg'}}</td>
     <td>{{ car.Miles_per_Gallon }}</td>
   </tr>
   </tbody>
