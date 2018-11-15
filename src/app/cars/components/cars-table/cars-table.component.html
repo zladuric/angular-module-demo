@@ -1,0 +1,18 @@
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Year</th>
+    <th>Weight</th>
+    <th>Fuel Economy</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let car of cars">
+    <td><a [routerLink]="['', car.Name]">{{ car.Name }}</a></td>
+    <td>{{ car.Year }}</td>
+    <td>{{ car.Weight_in_lbs }}</td>
+    <td>{{ car.Miles_per_Gallon }}</td>
+  </tr>
+  </tbody>
+</table>

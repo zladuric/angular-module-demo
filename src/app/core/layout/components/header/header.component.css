@@ -1,0 +1,12 @@
+
+nav {
+  display: inline;
+}
+
+.link {
+  padding: 0.5em;
+}
+
+app-search-filter {
+  float: right;
+}

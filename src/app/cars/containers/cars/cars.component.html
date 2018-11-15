@@ -1,0 +1,5 @@
+<button (click)="table = false">List</button>
+<button (click)="table = true">Table</button>
+
+<app-cars-list *ngIf="!table" [cars]="cars"></app-cars-list>
+<app-cars-table *ngIf="table" [cars]="cars"></app-cars-table>
