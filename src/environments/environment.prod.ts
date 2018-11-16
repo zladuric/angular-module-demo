@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  carsUrl: 'http://our-backend.com/api',
 };

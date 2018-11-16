@@ -11,7 +11,7 @@ class TestComponent {
   @Input() cars;
 }
 
-fdescribe('CarsComponent', () => {
+describe('CarsComponent', () => {
   let component: CarsComponent;
   let fixture: ComponentFixture<CarsComponent>;
 

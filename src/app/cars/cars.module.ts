@@ -10,6 +10,7 @@ import { CarsListComponent } from './components/cars-list/cars-list.component';
 import { CarsDetailComponent } from './containers/cars-detail/cars-detail.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ConvertFromPoundsPipe } from './pipes/convertFromPoundsPipe';
+import { HttpClientModule } from '@angular/common/http';
 
 // app
 
@@ -17,10 +18,10 @@ import { ConvertFromPoundsPipe } from './pipes/convertFromPoundsPipe';
   imports: [
     CommonModule,
     FormsModule,
+    HttpClientModule,
     CarsRoutingModule,
   ],
-  declarations: [CarsComponent, CarsTableComponent, CarsListComponent, CarsDetailComponent, FilterPipe, ConvertFromPoundsPipe],,
-  providers: [CarsService],
+  declarations: [CarsComponent, CarsTableComponent, CarsListComponent, CarsDetailComponent, FilterPipe, ConvertFromPoundsPipe],
 })
 export class CarsModule {
 }
